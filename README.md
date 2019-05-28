@@ -10,6 +10,9 @@ Both the 8812AU & 8814AU is supported on the v5.1.5 branch.`
 The branch v4.3.21 may also be built for RTL8814AU or RTL8812AU/RTL8821AU chipset. 
 Notice, kernel v4.12 support is still missing on the v4.3.21 branch.
 
+## Installing from package in Fedora
+[![Copr build status](https://copr.fedorainfracloud.org/coprs/sketchybinary/RTL8812AU/package/rtl8812au/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/sketchybinary/RTL8812AU/package/rtl8812au/)
+
 for building RTL8812AU/RTL8821AU driver type:
 
 `$ make`
