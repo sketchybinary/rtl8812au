@@ -7,8 +7,8 @@ License:        GPLv2
 URL:            https://github.com/sketchybinary/rtl8812au
 Source0:        https://github.com/sketchybinary/rtl8812au
 
-BuildRequires:  
-Requires:       
+BuildRequires:  kernel-devel
+Requires:       dkms
 
 %description
 
