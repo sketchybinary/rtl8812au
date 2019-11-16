@@ -185,14 +185,9 @@ ifeq ($(CONFIG_USB_HCI), y)
 HCI_NAME = usb
 endif
 
-ifeq ($(CONFIG_RTL8812A)_$(CONFIG_RTL8821A)_$(CONFIG_RTL8814A), y_y_y)
-
 EXTRA_CFLAGS += -DDRV_NAME=\"88XXau\"
 ifeq ($(CONFIG_USB_HCI), y)
 USER_MODULE_NAME = 88XXau
-endif
-else
-EXTRA_CFLAGS += -DDRV_NAME=\"rtl8812au\"
 endif
 
 _OS_INTFS_FILES :=	os_dep/osdep_service.o \
