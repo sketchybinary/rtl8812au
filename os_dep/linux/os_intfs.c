@@ -1589,9 +1589,12 @@ struct net_device *rtw_init_netdev(_adapter *old_padapter)
 	if (!pnetdev)
 		return NULL;
 
+#if (LINUX_VERSION_CODE > KERNEL_VERSION(4, 9, 140))
 	pnetdev->min_mtu = WLAN_MIN_ETHFRM_LEN;
-	pnetdev->mtu = WLAN_DATA_MAXLEN;
 	pnetdev->max_mtu = WLAN_DATA_MAXLEN;
+#endif
+
+	pnetdev->mtu = WLAN_DATA_MAXLEN;
 
 	pnetdev->dev.type = &wlan_type;
 	padapter = rtw_netdev_priv(pnetdev);
